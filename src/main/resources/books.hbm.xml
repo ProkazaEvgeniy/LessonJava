@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="lecture9V1.table.Books" table="books">
+        <id name="id" column="id" type="java.lang.Integer">
+            <generator class="increment"/>
+        </id>
+        <property name="title" column="title" type="java.lang.String"/>
+        <property name="isbn" column="isbn" type="java.lang.Integer"/>
+        <property name="description" column="description" type="java.lang.String"/>
+
+    </class>
+</hibernate-mapping>
