@@ -4,9 +4,9 @@
 <body>
 <%
     double num = Math.random();
-    if (num > 0.95) {
+    if (num > 0.5) {
 %>
-<h2>You'll have a luck day!</h2><p>(<%= num %>)</p>
+<h2>You`ll have a luck day!</h2><p>(<%= num %>)</p>
 <%
 } else {
 %>
@@ -19,6 +19,5 @@
 <c:if test="${value > 12}">
 <p>The temperature is: <c:out value="${value}"/> for : <c:out value="${name}"/><p>
 </c:if>
-<jsp:include page="bottom.jsp"/>
 </body>
 </html>

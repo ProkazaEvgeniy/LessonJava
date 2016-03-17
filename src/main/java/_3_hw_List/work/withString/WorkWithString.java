@@ -1,9 +1,6 @@
 package _3_hw_List.work.withString;
 
-import java.util.Arrays;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by admin on 25.02.2016.
@@ -86,6 +83,23 @@ public class WorkWithString {
             if (map.get(letter) == null) {
             } else {
                 System.out.println("Repetition letter = " + letter + " - " + map.get(letter));
+            }
+        }
+    }
+
+    public void repetitionInString1(String toCheck) {
+        List<Character> charsList = new ArrayList<>();
+        for (int i = 0; i < toCheck.length(); i++) {
+            int count = 0;
+            char letter = toCheck.charAt(i);
+            for (int j = 0; j < toCheck.length(); j++) {
+                if (letter == toCheck.charAt(j)) {
+                    count++;
+                }
+            }
+            if (!charsList.contains(letter)) {
+                charsList.add(letter);
+                System.out.println("Repetition " + letter + " count = " + count);
             }
         }
     }

@@ -19,7 +19,6 @@ public class Project {
         books.setIsbn(3448464);
         booksDao.addBooks(books);
         List<Books> list = booksDao.getBooks();
-//        System.out.println( "id= , title= , isbn= , description= ;");
 
         for (Books book : list) {
             System.out.println( "id= "              + book.getId() +
