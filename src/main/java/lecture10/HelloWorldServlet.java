@@ -19,6 +19,7 @@ public class HelloWorldServlet extends HttpServlet {
 
     private String message;
 
+
     public void init() throws ServletException
     {
         message = "Hello World";
@@ -34,9 +35,19 @@ public class HelloWorldServlet extends HttpServlet {
         System.out.println("We are in servlet");
         request.setAttribute("name", name);
         request.setAttribute("value", temp);
+        Factory factory = Factory.getInstance();
+        BooksDao booksDao = factory.getBooksDao();
+
+        try {
+            Books res = booksDao.getBooks(1);
+            request.setAttribute("book", res);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         RequestDispatcher dispatcher = request.getRequestDispatcher("./like.jsp");
         dispatcher.forward(request, response);
 //        response.sendRedirect("./like.jsp");
+
 
     }
 
