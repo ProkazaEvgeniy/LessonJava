@@ -46,7 +46,7 @@ public class HelloWorldServlet extends HttpServlet {
         }
         RequestDispatcher dispatcher = request.getRequestDispatcher("./like.jsp");
         dispatcher.forward(request, response);
-//        response.sendRedirect("./like.jsp");
+        response.sendRedirect("./like.jsp");
 
 
     }

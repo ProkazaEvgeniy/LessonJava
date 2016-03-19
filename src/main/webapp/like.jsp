@@ -22,7 +22,6 @@
 
 </c:if>
 
-
 <h2>This place for H2sql</h2>
 
 <c:out value="${book.getTitle()}"/>
@@ -54,8 +53,6 @@
     <th>value 8</th>
   </tr>
 </table>
-
-
 
 </body>
 </html>
