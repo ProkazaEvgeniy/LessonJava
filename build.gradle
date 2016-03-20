@@ -3,17 +3,23 @@ apply plugin: 'jetty'
 apply plugin: 'war'
 
 
+
+
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+
 
 repositories {
     mavenCentral()
 }
 
+
+
 dependencies {
+
     compile 'com.h2database:h2:1.4.188',
             'junit:junit:4.12',
-			'javax.persistence:persistence-api:1.0.2',
+            'javax.persistence:persistence-api:1.0.2',
             'org.hibernate:hibernate-core:5.1.0.Final',
             'javax.servlet:servlet-api:2.5',
             'jstl:jstl:1.2'
@@ -24,3 +30,4 @@ jettyRun{
     contextPath = "app01"
     httpPort = 8080
 }
+
