@@ -66,42 +66,42 @@ public class WorkWithString {
     /**
      */
     public void repetitionInString(String toCheck) {
-        String alph = "ABCDEFGHIKLMNOPRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-        for (int i = 0; i < alph.length(); i++) {
-            char letter = alph.charAt(i);
-            HashMap<Character, Integer> map = new HashMap<>();
-            for (int j = 0; j < toCheck.length(); j++) {
-                char c = toCheck.charAt(j);
-                if (Character.isLetter(c)) {
-                    if (map.containsKey(c)) {
-                        map.put(c, map.get(c) + 1);
-                    } else {
-                        map.put(c, 1);
-                    }
-                }
-            }
-            if (map.get(letter) == null) {
-            } else {
-                System.out.println("Repetition letter = " + letter + " - " + map.get(letter));
-            }
-        }
+//        String alph = "ABCDEFGHIKLMNOPRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+//        for (int i = 0; i < alph.length(); i++) {
+//            char letter = alph.charAt(i);
+//            HashMap<Character, Integer> map = new HashMap<>();
+//            for (int j = 0; j < toCheck.length(); j++) {
+//                char c = toCheck.charAt(j);
+//                if (Character.isLetter(c)) {
+//                    if (map.containsKey(c)) {
+//                        map.put(c, map.get(c) + 1);
+//                    } else {
+//                        map.put(c, 1);
+//                    }
+//                }
+//            }
+//            if (map.get(letter) == null) {
+//            } else {
+//                System.out.println("Repetition letter = " + letter + " - " + map.get(letter));
+//            }
+//        }
     }
 
     public void repetitionInString1(String toCheck) {
-        List<Character> charsList = new ArrayList<>();
-        for (int i = 0; i < toCheck.length(); i++) {
-            int count = 0;
-            char letter = toCheck.charAt(i);
-            for (int j = 0; j < toCheck.length(); j++) {
-                if (letter == toCheck.charAt(j)) {
-                    count++;
-                }
-            }
-            if (!charsList.contains(letter)) {
-                charsList.add(letter);
-                System.out.println("Repetition " + letter + " count = " + count);
-            }
-        }
+//        List<Character> charsList = new ArrayList<>();
+//        for (int i = 0; i < toCheck.length(); i++) {
+//            int count = 0;
+//            char letter = toCheck.charAt(i);
+//            for (int j = 0; j < toCheck.length(); j++) {
+//                if (letter == toCheck.charAt(j)) {
+//                    count++;
+//                }
+//            }
+//            if (!charsList.contains(letter)) {
+//                charsList.add(letter);
+//                System.out.println("Repetition " + letter + " count = " + count);
+//            }
+//        }
     }
 
     /**

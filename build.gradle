@@ -1,6 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'jetty'
 apply plugin: 'war'
+apply plugin: 'org.apache.maven.plugins:maven-war-plugin:2.1.1'
 
 
 sourceCompatibility = 1.8
@@ -16,6 +17,7 @@ dependencies {
 			'javax.persistence:persistence-api:1.0.2',
             'org.hibernate:hibernate-core:5.1.0.Final',
             'javax.servlet:servlet-api:2.5',
+            'javaee:javaee-api:5',
             'jstl:jstl:1.2'
 
 }
