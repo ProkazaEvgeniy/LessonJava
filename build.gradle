@@ -23,6 +23,9 @@ dependencies {
             'org.hibernate:hibernate-core:5.1.0.Final',
             'javax.servlet:servlet-api:2.5',
             'jstl:jstl:1.2'
+    compile 'org.glassfish.jersey.containers:jersey-container-servlet-core:2.22.1'
+    compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.22.1'
+
 
 }
 
